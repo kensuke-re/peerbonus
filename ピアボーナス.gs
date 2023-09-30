@@ -8,7 +8,7 @@ function doPost(e) {
   var userId = json.event.user;
   var text = json.event.text;
 
-  //カウントする絵文字と、リストを表示するテキストを設定
+  //カウントする絵文字と、リストを表示するテキストを設定する
   if (text.includes(':ここに絵文字を記入:')) {
     array = [nowTime, userId, text];
     sheet.appendRow(array);
